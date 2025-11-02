@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tim 2 Hidup HTML</title>
-</head>
-<body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-    <main>
-        <form>
-            <!-- sender info -->
-            <section>
-            <fieldset>
-                <legend><strong>Personal Info</strong></legend>
-                
-                <label for="sender-name">Your/Company Name:</label>
-                <input type="text" id="sender-name" name="sdname" placeholder="John HTML"/>
-                <br>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tim 2 Hidup HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <main>
+            <form id="contat-us-form">
+                <!-- sender info -->
+                <section>
+                    <fieldset>
+                        <legend><strong>Personal Info</strong></legend>
 
-                <label for="sender-email">Email Address:</label>
-                <input type="text" id="sender-email" name="sdemail" placeholder="johnhtml@hotmail.com"/>
-                <br>
+                        <label for="sender-name">Your/Company Name:</label>
+                        <input
+                            type="text"
+                            id="sender-name"
+                            name="sdname"
+                            placeholder="John HTML"
+                            required />
+                        <br />
 
-                <label for="sender-phone">Phone Number:</label>
-                <input type="text" id="sender-phone" name="sdphone" placeholder="+67 99285719285"/>
-                <br>
-                </fieldset>
-            </section>
+                        <label for="sender-email">Email Address:</label>
+                        <input
+                            type="text"
+                            id="sender-email"
+                            name="sdemail"
+                            placeholder="johnhtml@hotmail.com"
+                            required />
+                        <br />
 
-            <!-- sender message -->
-            <section>
-            <fieldset>
-                <legend><strong>Your Message</strong></legend>
+                        <label for="sender-phone">Phone Number:</label>
+                        <input
+                            type="text"
+                            id="sender-phone"
+                            name="sdphone"
+                            placeholder="+67 99285719285" />
+                        <br />
+                    </fieldset>
+                </section>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="msg" row="55" cols="50" placeholder="I want to hire your team."></textarea>
-                <br>
+                <!-- sender message -->
+                <section>
+                    <fieldset>
+                        <legend><strong>Your Message</strong></legend>
 
-                <label for="attachments">Upload attachment(s):</label>
-                <input type="file" id="attachments"  name="attachment"/>
-            </fieldset>
-            </section>
+                        <label for="message">Message:</label><br />
+                        <textarea
+                            id="message"
+                            name="msg"
+                            row="55"
+                            cols="50"
+                            placeholder="I want to hire your team."></textarea>
+                        <br />
 
-            <input type="reset" value="Reset Form"/>
-            <input type="submit" value="Submit"/>
-        </form>
-    </main>
-</body>
+                        <label for="attachments">Upload attachment(s):</label>
+                        <input type="file" id="attachments" name="attachment" />
+                    </fieldset>
+                </section>
+
+                <input type="reset" value="Reset Form" />
+                <input type="submit" value="Submit" />
+            </form>
+        </main>
+    </body>
 </html>
